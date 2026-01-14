@@ -3,3 +3,84 @@
 .font-use {
   font-family: "Work Sans", sans-serif;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
+/* shear style code*/
+.flex{
+    display: flex;
+}
+.color{
+    color: #727272;
+}
+.bg-color{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.btn-gorup{
+    background-color: #FF900E;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 800;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-top: 20px;
+
+}
+
+
+/* navber style code*/
+.navber{
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.list{
+    list-style: none;
+    margin-right: 30px;
+}
+.link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.logo-name h2{
+    font-weight: 700;
+    font-size: 3rem;
+}
+/* navbar style ses */
+.banar-ariya, .navber{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.banar-container{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banar-titile{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.banar-img img{
+    width: 100%;
+}
+
+/* responsive style  */
+@media screen and (max-with: 576px) {
+    .navber {
+        flex-direction: column;
+        /* display: block; */
+    }
+    .list-item{
+        flex-direction: column;
+    }
+    .banar-ariya, .navber{
+    max-width: 100%;
+    margin: 0 auto;
+}
+}
