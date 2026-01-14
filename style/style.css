@@ -26,10 +26,11 @@
     border-radius: 8px;
     padding: 20px 25px;
     margin-top: 20px;
-
 }
-
-
+p{
+    color: #727272;
+    font-size: 1.02rem;
+}
 /* navber style code*/
 .navber{
     justify-content: space-between;
@@ -69,18 +70,54 @@
 .banar-img img{
     width: 100%;
 }
+/* tems work and features section  */
+.team-work{
+    max-width: 1440px;
+    margin: 120px auto;
+    align-items: center;
+}
+.team-imges{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.team-feature{
+    /* text-align: center; */
+    width: 550px;
+    margin-left: 130px;
+}
+.team-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.quick-style{
+    color: #727272;
+    font-weight: 500;
+}
+.features-style{
+    color: #FF900E;
+    font-weight: 500;
+}
 
 /* responsive style  */
-@media screen and (max-with: 576px) {
-    .navber {
+@media screen and (max-width: 576px) {
+    .flex {
         flex-direction: column;
         /* display: block; */
-    }
-    .list-item{
-        flex-direction: column;
     }
     .banar-ariya, .navber{
     max-width: 100%;
     margin: 0 auto;
-}
+    }
+     /* work and features section responsive  */
+    .team-imges{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-feature{
+        margin-top: 50px;
+    }
+    .team-title{
+        margin-bottom: 0.8rem;
+    }
 }
