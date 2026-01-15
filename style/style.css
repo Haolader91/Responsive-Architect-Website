@@ -139,7 +139,7 @@ p{
     margin: 0 auto;
     }
      /* work and features section responsive  */
-    .team-imges{
+    .team-imges, .facts-container{
         grid-template-columns: repeat(1, 1fr);
     }
     .team-feature{
@@ -148,16 +148,11 @@ p{
     .team-title{
         margin-bottom: 0.8rem;
     }
-    .facts-card{
-        /* flex-direction: column; */
-        justify-content: center;
-        text-align: center;
-    }
     .facts-container{
-        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
     }
-    /* .some-facts{
-        align-items: center;
-        justify-content: center;
-    } */
+    .facts-card{
+        margin-bottom: 20px;
+    }
+    
 }
