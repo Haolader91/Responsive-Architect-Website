@@ -71,7 +71,8 @@ p{
     width: 100%;
 }
 /* tems work and features section  */
-.team-work{
+/* facts and team-work section width  */
+.team-work, .some-facts{
     max-width: 1440px;
     margin: 120px auto;
     align-items: center;
@@ -86,7 +87,8 @@ p{
     width: 550px;
     margin-left: 130px;
 }
-.team-title{
+/* team-title and facts-title code  */
+.team-title, .facts-title{
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 50px;
@@ -98,6 +100,32 @@ p{
 .features-style{
     color: #FF900E;
     font-weight: 500;
+}
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 80px;
+}
+.facts-card{
+    border: 1px solid #FF900E;
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: center; */
+}
+.facts-card h4{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+..facts-card h5{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 10px;
 }
 
 /* responsive style  */
@@ -120,4 +148,16 @@ p{
     .team-title{
         margin-bottom: 0.8rem;
     }
+    .facts-card{
+        /* flex-direction: column; */
+        justify-content: center;
+        text-align: center;
+    }
+    .facts-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* .some-facts{
+        align-items: center;
+        justify-content: center;
+    } */
 }
