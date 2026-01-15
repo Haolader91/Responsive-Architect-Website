@@ -72,7 +72,7 @@ p{
 }
 /* tems work and features section  */
 /* facts and team-work section width  */
-.team-work, .some-facts{
+.team-work, .some-facts, .features-love{
     max-width: 1440px;
     margin: 120px auto;
     align-items: center;
@@ -82,13 +82,13 @@ p{
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-.team-feature{
+.team-feature,{
     /* text-align: center; */
     width: 550px;
     margin-left: 130px;
 }
 /* team-title and facts-title code  */
-.team-title, .facts-title{
+.team-title, .facts-title, .Sponsors-title, .love-title{
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 50px;
@@ -101,10 +101,39 @@ p{
     color: #FF900E;
     font-weight: 500;
 }
+/* features-love secttion style code  */
+.features-love{
+    gap: 140px;
+}
+.love-box{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+.box-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.love-text{
+    margin-bottom: 30px;
+}
+.expectional-btn{
+    padding: 45px 42px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-left: -80px;
+    margin-top: -120px;
+}
+.years{
+    font-size: 4rem;
+    font-weight: 700;
+}
+/* facts section style  */
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .facts-card{
     border: 1px solid #FF900E;
@@ -148,11 +177,24 @@ p{
     .team-title{
         margin-bottom: 0.8rem;
     }
+    /* features-love secton responsive  */
+    .expectional-btn{
+        margin-left: 120px;
+        margin-top: 100px;
+        /* margin: a auto; */
+    }
+    .years{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    /* facts section responsive code  */
     .facts-container{
         justify-items: center;
     }
     .facts-card{
         margin-bottom: 20px;
     }
-    
+    .Sponsors-title{
+        margin: 0 auto;
+    }
 }
